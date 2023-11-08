@@ -1,7 +1,7 @@
  function algoritimo(vetor){
      let menor
      let maior
-     for(let i = 0; i < vetor.length; i++){
+     for(let i = 0; vetor.length; i++){
          if(maior == undefined && menor == undefined){
              maior = vetor[i]
              menor = vetor[i]
