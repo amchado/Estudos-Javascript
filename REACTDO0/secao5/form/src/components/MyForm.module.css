@@ -1,0 +1,11 @@
+form{
+    padding: 5px;
+    margin: 0 auto;
+    text-align: left;
+    width: 300px;
+  }
+  
+  input, textarea, select{ 
+    margin: 10px 0px;
+    display: block;
+  }
