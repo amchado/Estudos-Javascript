@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça  vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba   reta",
+      "price": 29.9
+    },
+    {
+      "id": "f745",
+      "name": "sacola",
+      "price": "0.25"
+    },
+    {
+      "id": "1e0c",
+      "name": "Cinto de Grife",
+      "price": "10.20"
+    },
+    {
+      "id": "f3ac",
+      "name": "Headset",
+      "price": "112.0"
+    },
+    {
+      "id": "8944",
+      "name": "Teclado Mecanico",
+      "price": "80"
+    },
+    {
+      "id": "9fb2",
+      "name": "mouse",
+      "price": "40"
+    },
+    {
+      "id": "a73a",
+      "name": "mochila do BEN 10",
+      "price": "200"
+    }
+  ]
+}
