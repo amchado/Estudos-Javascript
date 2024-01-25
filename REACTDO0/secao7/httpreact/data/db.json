@@ -6,11 +6,6 @@
       "price": 59.9
     },
     {
-      "id": "2",
-      "name": "Calça  vermelha",
-      "price": 90
-    },
-    {
       "id": "3",
       "name": "Boné aba   reta",
       "price": 29.9
@@ -19,11 +14,6 @@
       "id": "f745",
       "name": "sacola",
       "price": "0.25"
-    },
-    {
-      "id": "1e0c",
-      "name": "Cinto de Grife",
-      "price": "10.20"
     },
     {
       "id": "f3ac",
@@ -41,9 +31,9 @@
       "price": "40"
     },
     {
-      "id": "a73a",
-      "name": "mochila do BEN 10",
-      "price": "200"
+      "id": "527d",
+      "name": "Camisa do Fluminense",
+      "price": "300"
     }
   ]
 }

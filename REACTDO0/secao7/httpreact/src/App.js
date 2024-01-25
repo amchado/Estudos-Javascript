@@ -61,6 +61,11 @@ function App() {
     
   };
 
+  //8 - desafio remove
+  const handleRemove = (id) => {
+    httpConfig(id, "DELETE")
+  }
+
 
   return (
     <div className="App">
@@ -70,14 +75,14 @@ function App() {
       {erro && <p>{erro}</p>}
       {!loading && <ul>
         {items && items.map((product) => (
-          <li key={product.id}> {product.name} - R$:{product.price} </li>
+          <li key={product.id}> {product.name} - R$:{product.price}  <button className='botao' onClick={() => handleRemove(product.id)}> Remover </button></li>
         ))}
       </ul>}
         <div className="add-product">
           <form onSubmit={handleSubmit}>
             <label >
               Nome: 
-              <input type="text" value={name} name="name" onChange={(e) => setName(e.target.value)}/>
+              <input type="text" value={name} name="name" onChange={(e) => setName(e.target.value)} autoComplete='off'/>
             </label>
 
             <label>
