@@ -15,6 +15,12 @@
     text-transform: uppercase;
 }
 
+.brand span:hover {
+    color: #7321d1bd;
+    transition: 0.5s;
+    
+}
+
 .links_list{
     display: flex;
     list-style: none;
