@@ -1,6 +1,7 @@
 import {db} from '../firebase/Config'
 
-import {getAuth, createUserWithEmailAndPassword,SignInWithEmailAndPassword,updateProfile,signOut} from 'firebase/auth'
+
+import {getAuth, createUserWithEmailAndPassword,updateProfile,signOut, signInWithEmailAndPassword} from 'firebase/auth'
 
 import { useState, useEffect } from 'react'
 
@@ -60,8 +61,9 @@ export const useAuthentification = () => {
             }else{
                 systemErrorMessage = "Ocorreu um erro, por favor tente mais tarde. "
             }
-            setLoading(false)
+            
             setError(systemErrorMessage)
+            setLoading(false)
         }
 
         
@@ -76,6 +78,43 @@ export const useAuthentification = () => {
         signOut(auth)
     }
 
+
+    //login - sign in
+    const login = async(data) => {
+
+        checkIfIsCancelled()
+
+        setLoading(true)
+        setError(false)
+
+        try {
+            
+          await signInWithEmailAndPassword(auth, data.email, data.password)
+          setLoading(false)
+
+        } catch (error) {
+            
+            let systemErrorMessage
+            console.log(error)
+
+             if (error.message.includes("user-not-found")) {
+        systemErrorMessage = "Usuário não encontrado.";
+      } else if (error.message.includes("wrong-password")) {
+        systemErrorMessage = "Senha incorreta.";
+      } else {
+        systemErrorMessage = "Ocorreu um erro, por favor tenta mais tarde.";
+      }
+
+            setError(systemErrorMessage)
+            
+
+        }
+        setLoading(false)
+    }
+
+
+
+
     useEffect(() => {
         return () => setCancelled(true)
     }, []);
@@ -85,6 +124,7 @@ export const useAuthentification = () => {
         createUser,
         error,
         loading,
-        logout
+        logout,
+        login
     }
 }
