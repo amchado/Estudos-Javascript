@@ -20,7 +20,7 @@ a, nav button{
   border: none;
   color: black;
   transition: .4s;
-  font-size: 1em;
+  font-size: 0.9em;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
