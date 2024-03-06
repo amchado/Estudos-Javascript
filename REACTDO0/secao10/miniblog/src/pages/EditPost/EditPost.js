@@ -33,10 +33,10 @@ const EditPost = () => {
 
   const {user} = useAuthValue()
 
+  const navigate = useNavigate()
+
   const {updateDocument, response} = useUpdateDocument("posts")
 
-  const navigate = useNavigate()
-  
   
 
   const handleSubmit = (e) => {
