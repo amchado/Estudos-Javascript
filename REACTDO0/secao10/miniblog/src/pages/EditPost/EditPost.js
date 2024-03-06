@@ -75,9 +75,7 @@ const EditPost = () => {
       createdBy: user.displayName}
 
 
-    updateDocument(
-      {id, data}
-    )
+    updateDocument( id, data  )
 
     //redirect to home page
 
