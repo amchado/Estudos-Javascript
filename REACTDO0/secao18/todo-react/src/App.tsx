@@ -3,13 +3,16 @@ import React, { useState } from "react";
 //components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import TaskList from "./components/TaskList";
+import TaskForm from "./components/TaskForm";
 
 //css
 import styles from "./App.module.css"
-import TaskForm from "./components/TaskForm";
+
 
 //Interface
 import {ITask} from "./interfaces/Task"
+
 
 
 
@@ -26,7 +29,7 @@ function App() {
         </div>
         <div>
           <h2>Suas tarefas:</h2>
-          <p>Lista</p>
+          <TaskList taskList={taskList}/>
         </div>
       </main>
       <Footer/>
