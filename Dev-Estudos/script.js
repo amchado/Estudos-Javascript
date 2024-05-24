@@ -9,3 +9,7 @@ b = "Vermelho"
 
 console.log(a)
 console.log(b)
+
+
+
+
